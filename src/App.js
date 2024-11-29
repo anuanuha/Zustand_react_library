@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+// import { UserProfile } from './UserProfile'; // Import UserProfile
+// // import { UserProvider } from './contexts/UserContext'; // Import UserProvider
+
+// function App() {
+//   return (
+//     // // Wrap the entire app with UserProvider to make the context available
+//     <UserProvider>
+//       <div>
+//         <UserProfile />
+//       </div>
+//      </UserProvider>
+//   );
+// }
+
+// export default App;
+import { UserProfile } from "./UserProfile";
+function App(){
+  return(
+    <div>
+      <UserProfile/>
     </div>
-  );
+  )
 }
-
 export default App;
